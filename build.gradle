@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'ru.netology'
+group 'com.example'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -10,11 +10,11 @@ repositories {
 }
 
 dependencies {
-    // https://mvnrepository.com/artifact/org.testng/testng
-    testImplementation group: 'org.testng', name: 'testng', version: '7.10.2'
 
+    testImplementation 'junit:junit:4.13'
 }
 
+
 test {
-    useTestNG()
+    useJUnit()
 }
